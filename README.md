@@ -16,15 +16,29 @@ $ npm install waterline-elasticsearch
 ### Configuration
 
 ```js
-connections: {
-    myLocalElasticsearch: {
-        adapter: 'elasticsearch',
-        host: 'localhost',
-        port: 9200,
-        log: 'warning',
-        index: 'collab'
-    }
-}
+var orm = new Waterline();
+
+var config = {
+	adapters: {
+	    elasticsearch: require('waterline-elasticsearch')
+	},
+	connections: {
+	    myLocalElasticsearch: {
+	        adapter: 'elasticsearch',
+	        host: 'localhost',
+	        port: 9200,
+	        log: 'warning',
+	        index: 'collab'
+	    }
+	}
+};
+
+orm.initialize(config, function(err, models) {
+    if (err) throw err;
+    app.models = models.collections;
+    server.listen(8081);
+});
+
 ```
 
 ### Usage
