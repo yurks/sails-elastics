@@ -1,0 +1,52 @@
+![image_squidhome@2x.png](http://i.imgur.com/RIvu9.png)
+
+# waterline-elasticsearch
+
+Provides easy access to `elasticsearch` from Sails.js & Waterline.
+
+### Installation
+
+To install this adapter, run:
+
+```sh
+$ npm install waterline-elasticsearch
+```
+
+
+### Configuration
+
+```js
+connections: {
+    myLocalElasticsearch: {
+        adapter: 'elasticsearch',
+        host: 'localhost',
+        port: 9200,
+        log: 'warning',
+        index: 'collab'
+    }
+}
+```
+
+### Usage
+
+This adapter exposes the following methods:
+
+###### `find()`
+
++ **Status**
+  + Done
+
+###### `create()`
+
++ **Status**
+  + Done
+
+###### `update()`
+
++ **Status**
+  + Done
+
+###### `destroy()`
+
++ **Status**
+  + Done
