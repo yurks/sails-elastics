@@ -1,6 +1,6 @@
 {
   "name": "waterline-elasticsearch",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Persistent elasticsearch adapter for Sails.js / Waterline",
   "main": "lib/adapter.js",
   "scripts": {
@@ -42,7 +42,7 @@
       "associations"
     ]
   },
-  "_id": "waterline-elasticsearch@0.1.0",
+  "_id": "waterline-elasticsearch@0.1.2",
   "_from": "sails-elasticsearch@*",
   "_npmVersion": "1.4.9",
   "maintainers": [
@@ -51,6 +51,5 @@
       "email": "sander@spilleman.nl"
     }
   ],
-  "directories": {},
-  "readme": "ERROR: No README data found!"
+  "directories": {}
 }
