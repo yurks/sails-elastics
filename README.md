@@ -28,7 +28,7 @@ var config = {
 	        host: 'localhost',
 	        port: 9200,
 	        log: 'warning',
-	        index: 'collab'
+	        index: '<index to use>'
 	    }
 	}
 };
