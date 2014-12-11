@@ -80,6 +80,11 @@ This adapter exposes the following methods:
 + **Status**
   + Done
 
+###### `findOne()`
+
++ **Status**
+  + Done
+
 ###### `create()`
 
 + **Status**
