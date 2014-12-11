@@ -33,15 +33,45 @@ var config = {
 	}
 };
 
+```
+
+### Usage
+
+```js
+var createModel = function(orm, identity, connection, tablename) {
+    console.log("Using connection: " + connection + " for object: " + identity);
+    var obj = Waterline.Collection.extend({
+        identity: identity,
+        tableName: tablename ? tablename : identity + 's',
+        connection: connection,
+        attributes: {
+            id: {
+                type: 'integer',
+                primaryKey: true,
+                // required: true,
+                index: true
+            }
+        }
+    });
+    orm.loadCollection(obj);
+}
+
+createModel(orm, 'note', 'myLocalElasticsearch', 'notes');
+
 orm.initialize(config, function(err, models) {
     if (err) throw err;
     app.models = models.collections;
-    server.listen(8081);
+});
+
+app.models[note].findOne({
+    id: id
+}).exec(function(err, model) {
+    if (err) console.log(err);
+    console.log(model);
 });
 
 ```
 
-### Usage
 
 This adapter exposes the following methods:
 
