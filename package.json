@@ -22,11 +22,11 @@
     "url": "git://github.com/ajcarpenter/sails-elasticsearch.git"
   },
   "dependencies": {
-    "async": "~0.8.0",
-    "bluebird": "^3.0.6",
-    "elasticsearch": "^10.0.1",
-    "lodash": "~2.4.1",
-    "waterline-errors": "~0.10.0"
+    "async": "^0.8.0",
+    "bluebird": "^3.5.1",
+    "elasticsearch": "^15.1.1",
+    "lodash": "^2.4.2",
+    "waterline-errors": "^0.10.1"
   },
   "devDependencies": {
     "waterline-adapter-tests": "~0.10.0",
