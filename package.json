@@ -1,5 +1,5 @@
 {
-  "name": "sails-elasticsearch",
+  "name": "sails-elastics",
   "version": "0.12.0",
   "description": "Elasticsearch adapter for Sails / Waterline",
   "main": "./lib/adapter.js",
@@ -19,7 +19,7 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ajcarpenter/sails-elasticsearch.git"
+    "url": "https://github.com/yurks/sails-elastics.git"
   },
   "dependencies": {
     "async": "^0.8.0",
@@ -34,7 +34,7 @@
     "captains-log": "~0.11.0"
   },
   "waterlineAdapter": {
-    "type": "elasticsearch",
+    "type": "elastics",
     "interfaces": [
       "semantic"
     ],
