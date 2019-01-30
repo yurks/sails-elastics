@@ -1,4 +1,4 @@
-# waterline-elasticsearch
+# sails-elastics
 
 [![Join the chat at https://gitter.im/mie00/sails-elasticsearch](https://badges.gitter.im/mie00/sails-elasticsearch.svg)](https://gitter.im/mie00/sails-elasticsearch?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
@@ -7,7 +7,7 @@
 To install this adapter, run:
 
 ```sh
-$ npm install sails-elastic
+$ npm install sails-elastics
 ```
 
 
@@ -17,7 +17,7 @@ $ npm install sails-elastic
 
 ```js
 {
-    adapter: 'sails-elastic',
+    adapter: 'sails-elastics',
     hosts: ['http://127.0.0.1:9200'],
     keepAlive: false,
     sniffOnStart: true,
@@ -31,7 +31,7 @@ $ npm install sails-elastic
 
 ##### Attributes
 
-sails-elastic does not support `attributes` inside the model. It gets its attributes from another attribute in the model called `elasticSearch`. There you can tell elasticsearch how to create the index. You can find more information [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-create-index.html).
+sails-elastics does not support `attributes` inside the model. It gets its attributes from another attribute in the model called `elasticSearch`. There you can tell elasticsearch how to create the index. You can find more information [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-create-index.html).
 
 ```js
 // person model
